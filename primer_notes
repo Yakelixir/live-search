@@ -1,0 +1,17 @@
+Primer Credit:
+
+https://medium.com/faun/building-a-real-time-elastic-search-engine-using-python-32e05bcb9140
+
+1. Now let’s write a docker-compose file to run Elasticsearch container.
+** This Compose file defines one service, The Elasticsearch service:
+
+Step 2— Create new elastic search indices
+We will be creating two indices called autocomplete and hacker. hacker
+index will be using a template called search_engine_template.
+
+Index templates allow you to define templates that will automatically be applied when new indices are created.
+The templates include both settings and mappings and a simple pattern template that controls
+whether the template should be applied to the new index.
+
+run create_new_index.py
+
