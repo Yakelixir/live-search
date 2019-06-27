@@ -1,6 +1,7 @@
 Primer Credit:
 
 https://medium.com/faun/building-a-real-time-elastic-search-engine-using-python-32e05bcb9140
+https://github.com/dineshsonachalam/Building-a-search-engine-using-Elasticsearch
 
 1. Now let’s write a docker-compose file to run Elasticsearch container.
 ** This Compose file defines one service, The Elasticsearch service:
