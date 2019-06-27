@@ -10,7 +10,7 @@ def check_if_index_is_present(url):
 
 
 if __name__ == "__main__":
-    url = "http://localhost:9200/_template/search_engine_template/"
+    url = "http://localhost:8005/_template/search_engine_template/"
     response = requests.request("GET", url, data="")
     if(len(response.text)>2):
         print("1. Deleted template: search_engine_template")
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     if (response.status_code == 200):
         print("2. Created a new template: search_engine_template")
 
-    url = "http://localhost:9200/hacker"
+    url = "http://localhost:8005/hacker"
     json_data = check_if_index_is_present(url)
 
     if(not 'error' in json_data):
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     if (response.status_code == 200):
         print("4. Created an index: hacker")
 
-    url = "http://localhost:9200/autocomplete"
+    url = "http://localhost:8005/autocomplete"
     json_data = check_if_index_is_present(url)
 
     if(not 'error' in json_data):
